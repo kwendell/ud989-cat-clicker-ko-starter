@@ -4,6 +4,12 @@ var ViewModel = function() {
    this.imgSrc = ko.observable('img/434164568_fea0ad4013_z.jpg');
    this.imgAttribution = ko.observable('acknowledgement');
 
+   this.nicknames = ko.observableArray([
+        { name: 'Bert' },
+        { name: 'Charles' },
+        { name: 'Denise' }
+    ]);
+
    this.incrementCounter = function() {
       this.clickCount(this.clickCount() +1);
 
