@@ -11,7 +11,7 @@ var ViewModel = function() {
    };
    this.level = ko.computed(function() {
       var retval = "newborn";
-      if (this.clickCount>9) {
+      if (this.clickCount()>9) {
           retval="infant";
       }
       return retval;
