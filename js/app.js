@@ -5,9 +5,9 @@ var ViewModel = function() {
    this.imgAttribution = ko.observable('acknowledgement');
 
    this.nicknames = ko.observableArray([
-        { name: 'Bert' },
-        { name: 'Charles' },
-        { name: 'Denise' }
+        'Bert' ,
+        'Charles',
+        'Denise'
     ]);
 
    this.incrementCounter = function() {
